@@ -6,11 +6,11 @@
 
 <!-- just for passing test below complete implementation
 
-<div data-header="desktop-logo">search</div>
-<div data-header="mobile-logo">search</div>
-<div data-header="search">search</div>
-<div data-header="desktop-menu">menu</div>
-<div data-header="mobile-menu">menu</div>
+<div data-test-header="desktop-logo">search</div>
+<div data-test-header="mobile-logo">search</div>
+<div data-test-header="search">search</div>
+<div data-test-header="desktop-menu">menu</div>
+<div data-test-header="mobile-menu">menu</div>
 -->
 
 
@@ -26,14 +26,14 @@
 
     <!-- logo or title-->
     <div class="uk-navbar-left nav-overlay" >
-      <a class="uk-navbar-item uk-logo" href="#" data-header="desktop-logo">
+      <a class="uk-navbar-item uk-logo" href="#" data-test-header="desktop-logo">
         <!--h3 Site Name-->
         <img src="http://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-White-Large.png" alt="logo" width="64"></a>
     </div>
     <!-- end logo or title-->
 
     <!-- menu-->
-    <div class="uk-navbar-right nav-overlay" data-header="desktop-menu">
+    <div class="uk-navbar-right nav-overlay" data-test-header="desktop-menu">
       <div class="uk-navbar-flip">
 
 
@@ -55,7 +55,7 @@
     <!-- endmenu-->
 
     <!-- Overlay Search-->
-    <div class="nav-overlay uk-navbar-left uk-flex-1" hidden data-header="search">
+    <div class="nav-overlay uk-navbar-left uk-flex-1" hidden data-test-header="search">
       <div class="uk-navbar-item uk-width-expand">
         <form class="uk-search uk-search-navbar uk-width-1-1">
           <input class="uk-search-input" type="search" placeholder="Search..." autofocus>
@@ -70,7 +70,7 @@
 
 
   <!-- off-canvas menu-->
-  <div id="mobile-navbar" uk-offcanvas="mode: slide; flip: false" data-header="mobile-menu">
+  <div id="mobile-navbar" uk-offcanvas="mode: slide; flip: false" data-test-header="mobile-menu">
     <div class="uk-offcanvas-bar">
       <!-- off-canvas close button-->
       <button class="uk-offcanvas-close" type="button" uk-close></button>
@@ -78,7 +78,7 @@
       <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
         <!-- logo or title-->
         <li class="uk-text-center" style="padding: 0 0 25px 0;">
-          <a href="#" data-header="mobile-logo">
+          <a href="#" data-test-header="mobile-logo">
             <!--h3 Site Name-->
             <img src="http://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-White-Large.png" alt="logo" width="64"></a>
         </li>
