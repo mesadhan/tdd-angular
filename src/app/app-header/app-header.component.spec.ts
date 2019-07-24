@@ -24,12 +24,12 @@ describe('AppHeaderComponent', () => {
     expect(component).toBeTruthy();
   });*/
   it('should show logo', () => {
-    expect(fixture.nativeElement.querySelector('[data-header-logo="logo"]')).toBeTruthy();
+    expect(fixture.nativeElement.querySelector('[data-header="logo"]')).toBeTruthy();
   });
   it('should show search', () => {
-    expect(fixture.nativeElement.querySelector('[data-header-search="search"]')).toBeTruthy();
+    expect(fixture.nativeElement.querySelector('[data-header="search"]')).toBeTruthy();
   });
   it('should show menu', () => {
-    expect(fixture.nativeElement.querySelector('[data-header-menu="menu"]')).toBeTruthy();
+    expect(fixture.nativeElement.querySelector('[data-header="menu"]')).toBeTruthy();
   });
 });
