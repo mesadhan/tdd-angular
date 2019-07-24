@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-app-header',
@@ -7,7 +7,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppHeaderComponent implements OnInit {
 
-  constructor() { }
+  menuList = [
+    {
+      label: 'Home',
+      href: '#home',
+      active: 'uk-active',
+    },
+    {
+      label: 'About',
+      href: '#about',
+      active: '',
+    },
+    {
+      label: 'Contact',
+      href: '#contact',
+      active: '',
+    }
+    ];
+
+  constructor() {
+  }
 
   ngOnInit() {
   }

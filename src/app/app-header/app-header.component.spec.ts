@@ -23,13 +23,19 @@ describe('AppHeaderComponent', () => {
   /*it('should create', () => {
     expect(component).toBeTruthy();
   });*/
-  it('should show logo', () => {
-    expect(fixture.nativeElement.querySelector('[data-header="logo"]')).toBeTruthy();
+  it('should show desktop logo', () => {
+    expect(fixture.nativeElement.querySelector('[data-header="desktop-logo"]')).toBeTruthy();
+  });
+  it('should show mobile logo', () => {
+    expect(fixture.nativeElement.querySelector('[data-header="mobile-logo"]')).toBeTruthy();
   });
   it('should show search', () => {
     expect(fixture.nativeElement.querySelector('[data-header="search"]')).toBeTruthy();
   });
-  it('should show menu', () => {
-    expect(fixture.nativeElement.querySelector('[data-header="menu"]')).toBeTruthy();
+  it('should show desktop menu', () => {
+    expect(fixture.nativeElement.querySelector('[data-header="desktop-menu"]')).toBeTruthy();
+  });
+  it('should show mobile menu', () => {
+    expect(fixture.nativeElement.querySelector('[data-header="mobile-menu"]')).toBeTruthy();
   });
 });
