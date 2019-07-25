@@ -2,13 +2,13 @@
 <p>app-homes works!</p>
 -->
 
-<div class="uk-child-width-expand@s uk-text-center" uk-grid>
+<div class="uk-child-width-expand@s" uk-grid>
   <div data-test-home="item" *ngFor="let item of items$ | async">
     <div class="uk-card uk-card-default uk-card-body">
 
-      <h5><span>Name: </span>{{item.title}}</h5>
+      <h5><span class="label-title">Name: </span>{{item.title}}</h5>
       <img src="{{item.image}}" alt="{{item.title}}" width="500" height="600" style="overflow: hidden;">
-      <p><span>Location: </span>{{item.location}}</p>
+      <p><span class="label-title">Location: </span>{{item.location}}</p>
 
     </div>
   </div>
