@@ -12,8 +12,9 @@ export class AppHomesComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    // this.items$ = this.dataService.getItems$();
-    this.items$ = of([
+    this.items$ = this.homeDataService.getHomeItems$();
+
+    /*this.items$ = of([
       {
         title: 'Trulli',
         image: 'https://www.w3schools.com/html/pic_trulli.jpg',
@@ -29,7 +30,7 @@ export class AppHomesComponent implements OnInit {
         image: 'https://www.w3schools.com/html/img_chania.jpg',
         location: 'Chania',
       }
-    ]);
+    ]);*/
   }
 
 }
