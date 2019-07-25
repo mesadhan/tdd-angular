@@ -25,6 +25,9 @@ describe('AppHomesComponent', () => {
   it('should expect 3 items', () => {
     expect(fixture.nativeElement.querySelectorAll(`[data-test-home="item"]`).length).toBe(3);
   });
-
-
+  it('should show home info', () => {
+    expect(fixture.nativeElement.querySelector(`[data-test-home="title"]`).innerText).toEqual('Trulli');
+    expect(fixture.nativeElement.querySelector(`[data-test-home="location"]`).innerText).toEqual('USA');
+    expect(fixture.nativeElement.querySelector(`[data-test-home="image"]`)).toBeTruthy();
+  });
 });
