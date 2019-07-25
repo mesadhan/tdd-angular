@@ -22,4 +22,9 @@ describe('AppHomesComponent', () => {
   /*it('should create', () => {
     expect(component).toBeTruthy();
   });*/
+  it('should expect 3 items', () => {
+    expect(fixture.nativeElement.querySelectorAll(`[data-test-home="item"]`).length).toBe(3);
+  });
+
+
 });
