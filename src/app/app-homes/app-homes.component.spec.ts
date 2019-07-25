@@ -1,6 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { AppHomesComponent } from './app-homes.component';
+import {DataService} from './data.service';
+import {of} from 'rxjs';
 
 describe('AppHomesComponent', () => {
   let component: AppHomesComponent;
@@ -8,9 +10,13 @@ describe('AppHomesComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AppHomesComponent ]
-    })
-    .compileComponents();
+      declarations: [ AppHomesComponent ],
+    }).overrideComponent(AppHomesComponent, {
+      set: {
+        providers: [{provide: DataService, useClass: MockDataService}]
+      }
+    });
+    // .compileComponents();
   }));
 
   beforeEach(() => {
@@ -31,3 +37,28 @@ describe('AppHomesComponent', () => {
     expect(fixture.nativeElement.querySelector(`[data-test-home="image"]`)).toBeTruthy();
   });
 });
+
+class MockDataService {
+  getHomeItems$() {
+    return of([
+      {
+        title: 'Trulli',
+        image: 'https://www.w3schools.com/html/pic_trulli.jpg',
+        location: 'USA',
+      },
+      {
+        title: 'Mac Computer',
+        image: 'https://www.w3schools.com/w3images/mac.jpg',
+        location: 'UK',
+      },
+      {
+        title: 'Flowers in Chania',
+        image: 'https://www.w3schools.com/html/img_chania.jpg',
+        location: 'Chania',
+      }
+    ]);
+  }
+}
+
+
+// https://stackoverflow.com/questions/40319045/mock-custom-service-in-angular2-during-unit-test
