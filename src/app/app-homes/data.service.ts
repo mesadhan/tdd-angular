@@ -9,6 +9,6 @@ export class DataService {
 
   constructor(private httpClient: HttpClient) { }
   getHomeItems$() {
-    return this.httpClient.get<any>('home/items');
+    return this.httpClient.get<any>('assets/items.json');
   }
 }

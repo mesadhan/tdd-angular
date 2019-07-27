@@ -36,14 +36,18 @@ describe('DataService', () => {
         location: 'Chania',
       }
     ];
+
     // Use our service to get items
     spyOn(httpClient, 'get').and.returnValue(of(itemsMock));
     dataService = TestBed.get(DataService);
     const spy = jasmine.createSpy('spy');
     dataService.getHomeItems$().subscribe(spy);
+
     // Verify that the service returned mocked data
     expect(spy).toHaveBeenCalledWith(itemsMock);
-    // Verify that the service called the proper HTTP endpoint
-    expect(httpClient.get).toHaveBeenCalledWith('home/items');
+
+    // verify that the service called the proper HTTP endpoint
+    expect(httpClient.get).toHaveBeenCalledWith('assets/items.json');
   });
+
 });
