@@ -1,11 +1,18 @@
 # TddAngular
 
+# What I Learned
+- Learn How accutally test driven development work.
+- Imporve Confident with TDD Culture.
+- Learn how Karma, Protractor and Jesmine Work in Angular.
+- Learn how third-party library and dependency work in Angular.
+- Learn Angular Service, Component, Route, Module etc
+- Learn Reactive Programming.
+- Learn Mocking concept.
 
+# CLI Basic Command
 
-ng g c app-header
-ng g c app-homes
-
-ng s
+    ng g c app-header
+    ng g c app-homes
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
