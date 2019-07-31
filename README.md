@@ -1,5 +1,7 @@
 # TddAngular
 
+Test Driven Development Using Angular8. Sample POC to Understand How actually TDD Work on Angular.
+
 # What I Learned
 - Learn How accutally test driven development work.
 - Imporve Confident with TDD Culture.
